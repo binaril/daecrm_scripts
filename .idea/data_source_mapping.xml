@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/gps_points.sql" value="9ecb3681-82cc-49b6-a430-325e1d5adfbe" />
     <file url="file://$PROJECT_DIR$/logs.sql" value="9ecb3681-82cc-49b6-a430-325e1d5adfbe" />
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/9ecb3681-82cc-49b6-a430-325e1d5adfbe/console.sql" value="9ecb3681-82cc-49b6-a430-325e1d5adfbe" />
   </component>
