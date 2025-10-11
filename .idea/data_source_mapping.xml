@@ -2,7 +2,10 @@
 <project version="4">
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/gps_points.sql" value="9ecb3681-82cc-49b6-a430-325e1d5adfbe" />
-    <file url="file://$PROJECT_DIR$/logs.sql" value="9ecb3681-82cc-49b6-a430-325e1d5adfbe" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/9ecb3681-82cc-49b6-a430-325e1d5adfbe/console.sql" value="9ecb3681-82cc-49b6-a430-325e1d5adfbe" />
+    <file url="file://$PROJECT_DIR$/logs.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251005.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
+    <file url="file://$PROJECT_DIR$/migrations_limousine/current.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
+    <file url="file://$PROJECT_DIR$/triggers.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
+    <file url="file://$PROJECT_DIR$/users.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
   </component>
 </project>
