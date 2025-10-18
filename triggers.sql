@@ -15,6 +15,8 @@ select * from "CompanyEventTriggers" ce
 inner join "EventTriggers" t on ce."EventTriggerId" = t."Id"
 where "CompanyId"=2;
 
+select * from "Users" where "CompanyId"=2 and "Role"=0 and "IsBlocked"= false
+
 /*
 1 Order cancelled by driver - Из системы агрегатора поступила информация об отмене заказа со стороны водителя (кроме убера, нет в API)
 2 Mileage without orders - Водитель проехал 20 км без пассажира (фиксируется по одометру и датчику сидения)
@@ -52,7 +54,7 @@ sum (case when r."CompanyEventTriggerId" = 5 then 1 else 0 end) "Block driver",
 sum (case when r."CompanyEventTriggerId" = 6 then 1 else 0 end) "Offline/online"
 from "DriverReportLogs" r
 inner join "Users" u on r."DriverId" = u."Id"
-where "ReportId" is null and r."Time">='2025-10-13 00:00:00.000000 +04:00';
+where "ReportId" is null and r."Time">='2025-10-17 00:00:00.000000 +04:00';
 
 
 --из отправленных
@@ -67,5 +69,5 @@ sum (case when r."CompanyEventTriggerId" = 5 then 1 else 0 end) "Block driver",
 sum (case when r."CompanyEventTriggerId" = 6 then 1 else 0 end) "Offline/online"
 from "DriverReportLogs" r
 inner join "Users" u on r."DriverId" = u."Id"
-where "ReportId" is null and r."Time">='2025-10-13 00:00:00.000000 +04:00' and r."IsSuccess";
+where "ReportId" is null and r."Time">='2025-10-17 00:00:00.000000 +04:00' and r."IsSuccess";
 

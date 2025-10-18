@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/driverTargets.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/gps_points.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/logs.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251005.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251014.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_limousine/20251017.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_limousine/20251018.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_limousine/current.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/transactions.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/triggers.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/users.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/zed.sql" dialect="PostgreSQL" />
   </component>
 </project>
