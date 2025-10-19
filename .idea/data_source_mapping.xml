@@ -2,6 +2,7 @@
 <project version="4">
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/bolt.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
+    <file url="file://$PROJECT_DIR$/cars.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/driverTargets.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/gps_points.sql" value="9ecb3681-82cc-49b6-a430-325e1d5adfbe" />
     <file url="file://$PROJECT_DIR$/logs.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
@@ -9,7 +10,9 @@
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251014.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/migrations_limousine/20251017.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/migrations_limousine/20251018.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
+    <file url="file://$PROJECT_DIR$/migrations_limousine/20251019.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/migrations_limousine/current.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
+    <file url="file://$PROJECT_DIR$/reports.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/transactions.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/triggers.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/uber.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
