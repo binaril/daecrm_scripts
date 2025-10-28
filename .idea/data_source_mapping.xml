@@ -2,21 +2,23 @@
 <project version="4">
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/bolt.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
-    <file url="file://$PROJECT_DIR$/cars.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/driverTargets.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/gps_points.sql" value="9ecb3681-82cc-49b6-a430-325e1d5adfbe" />
-    <file url="file://$PROJECT_DIR$/logs.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251005.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251027.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/current.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
     <file url="file://$PROJECT_DIR$/migrations_limousine/20251017.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/migrations_limousine/20251018.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/migrations_limousine/20251019.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/migrations_limousine/current.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
-    <file url="file://$PROJECT_DIR$/reports.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/transactions.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/triggers.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/uber.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
-    <file url="file://$PROJECT_DIR$/users.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
+    <file url="file://$PROJECT_DIR$/users.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
     <file url="file://$PROJECT_DIR$/yango.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
     <file url="file://$PROJECT_DIR$/zed.sql" value="fb83a882-a00e-4682-ba34-33aa58cc6f67" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/05d93f26-a276-4fb8-b877-030e1b135952/console.sql" value="05d93f26-a276-4fb8-b877-030e1b135952" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/8b5d0aab-f8e7-4270-a16d-6742e19c22e2/console.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/ca08fb27-cafb-4085-9b9c-987556b7c4fe/console.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
   </component>
 </project>
