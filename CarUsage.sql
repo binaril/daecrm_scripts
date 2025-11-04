@@ -1,0 +1,1 @@
+select * from "CarUsages" where "UserId" is null

@@ -58,5 +58,5 @@ select * from "Logs"
 select * from "Reports";
 
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 4 and "EntityId" = 11
+         where "CompanyId"=2 and "EntityTypeCode" = 4 --and "EntityId" = 11
          order by "Time" desc;

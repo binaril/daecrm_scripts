@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="limousine_copy@89.223.121.133" uuid="9ecb3681-82cc-49b6-a430-325e1d5adfbe">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://89.223.121.133:32542/limousine_copy</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
-    <data-source source="LOCAL" name="limousine" uuid="fb83a882-a00e-4682-ba34-33aa58cc6f67">
-      <driver-ref>postgresql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://89.223.121.133:25432/limousine</jdbc-url>
-      <working-dir>$ProjectFileDir$</working-dir>
-    </data-source>
     <data-source source="LOCAL" name="postgres@176.97.78.207" uuid="cb81acd0-1713-4798-b25c-9aeff4b9947b">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>

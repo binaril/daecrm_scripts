@@ -1,3 +1,23 @@
+--unhandled
+select count(*) from "Transactions" where "CompanyId" = 2 and "IsHandled" = false;
+
+select * from "Transactions" where "CompanyId" = 2 and "IsHandled" = false
+order by "DateTime" desc;
+
+--Yango
+select * from "Transactions" where "AggregatorId" = 0 and "CompanyId" = 2
+order by "DateTime" desc;
+
+select * from "Orders" where "AggregatorId" = 0 and "CompanyId" = 2
+order by "DateTime" desc;
+
+
+--Uber
+select * from "Transactions" where "AggregatorId" = 5 and "CompanyId" = 2
+order by "DateTime" desc;
+
+select * from "Orders" where "AggregatorId" = 5 and "CompanyId" = 2
+order by "DateTime" desc;
 
 
 --Zed
@@ -19,3 +39,5 @@ order by "DateTime" desc;
 select * from "ZedDrivers" where "Name" like '%Elhassan%'
 
 select * from "DriverActivityStatuses"
+
+select * from "UserSessions"
