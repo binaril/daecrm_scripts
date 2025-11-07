@@ -8,5 +8,5 @@ select * from "Users" where "Role"=0 and "CompanyId"=2 and "DriverActivityStatus
 
 
 
-select * from "Users" where "Role"=0 and "CompanyId"=2 and "IsBlocked" = false
-                        and "UserName" like '%Hassan%'
+select * from "Users" where "Role"=0 and "CompanyId"=2 --and "IsBlocked" = false
+                        and "UserName" like '%Yasin%'
