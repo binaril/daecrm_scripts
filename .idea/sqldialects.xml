@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/CarUsage.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/bolt.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/cars.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/driverStates.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/driverTargets.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/gps_points.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/imort_transactions.sql" dialect="PostgreSQL" />
