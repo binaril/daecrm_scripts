@@ -40,7 +40,7 @@ sum (case when r."CompanyEventTriggerId" = 5 then 1 else 0 end) "Block driver",
 sum (case when r."CompanyEventTriggerId" = 6 then 1 else 0 end) "Offline/online"
 from "DriverReportLogs" r
 inner join "Users" u on r."DriverId" = u."Id"
-where "ReportId" is null and r."Time">='2025-10-13 00:00:00.000000 +04:00'
+where "ReportId" is null and r."Time">='2025-11-01 00:00:00.000000 +04:00'
 group by u."UserName";
 
 
@@ -71,3 +71,24 @@ from "DriverReportLogs" r
 inner join "Users" u on r."DriverId" = u."Id"
 where "ReportId" is null and r."Time">='2025-10-17 00:00:00.000000 +04:00' and r."IsSuccess";
 
+
+
+select * from  "DriverReportLogs" r
+where r."CompanyEventTriggerId" = 1
+order by "Id" desc
+
+
+select * from "CompanyEventTriggers";
+
+select * from "Reports";
+
+select o."DateTime" + interval '1 hour' * 4 as time, u."UserName", a."Name", o."AddInfo"
+from "Orders" o
+inner join "Users" u on o."DriverId" = u."Id"
+inner join "Aggregators" a on a."Id" = o."AggregatorId"
+where u."CompanyId" = 2
+  --and "AddInfo" not like '%client cancelled%'
+              and "OrderStatusId" = 6
+              order by o."DateTime" desc;
+
+select * from "OrderStatuses"
