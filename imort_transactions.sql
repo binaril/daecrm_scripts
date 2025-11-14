@@ -1,3 +1,5 @@
 select * from daecrm.public."ImportTransactionOperations"
 
-select * from
+select * from "Transactions" where "AggregatorTransactionId" = '19245035'
+
+

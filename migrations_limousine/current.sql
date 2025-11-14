@@ -1,1 +1,0 @@
-select * from "__EFMigrationsHistory" order by "MigrationId" desc

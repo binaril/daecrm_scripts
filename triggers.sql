@@ -74,7 +74,7 @@ where "ReportId" is null and r."Time">='2025-10-17 00:00:00.000000 +04:00' and r
 
 
 select * from  "DriverReportLogs" r
-where r."CompanyEventTriggerId" = 1
+where r."CompanyEventTriggerId" = 2
 order by "Id" desc
 
 
@@ -92,3 +92,7 @@ where u."CompanyId" = 2
               order by o."DateTime" desc;
 
 select * from "OrderStatuses"
+
+select * from "Companies"
+
+select * from "Users" where "Role" != 0 order by "Id"

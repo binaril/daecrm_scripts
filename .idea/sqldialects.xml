@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/CarUsage.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/bolt.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/cars.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/database_size.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/driverStates.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/driverTargets.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/gps_points.sql" dialect="PostgreSQL" />
@@ -16,11 +17,8 @@
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251028.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251101.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251104.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251109.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/current.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_limousine/20251017.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_limousine/20251018.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_limousine/20251019.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_limousine/current.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/reports.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/transactions.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/triggers.sql" dialect="PostgreSQL" />
