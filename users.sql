@@ -10,3 +10,17 @@ select * from "Users" where "Role"=0 and "CompanyId"=2 and "DriverActivityStatus
 
 select * from "Users" where "Role"=0 and "CompanyId"=2 --and "IsBlocked" = false
                         and "UserName" like '%Yasin%'
+
+
+select * from "Users" where "ChatId" is not null
+         order by "Id"
+
+         where "Role"!=0 and "CompanyId"=2
+
+
+         select "BotId" from "Companies"
+
+         6899593548:AAGQbMOC2vnv81PTgayIMMXEX-0gHA8lp7I
+
+
+                        test 6723763141:AAG1m8YckWKyHKuCKnnRptwuqSCS12woBjY
