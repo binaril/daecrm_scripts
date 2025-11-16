@@ -4,6 +4,10 @@ select * from "CompanyEventTriggers";
 
 select * from "DriverReportLogs" order by  "Time" desc;
 
+select * from "DriverReportLogs"
+         where "CompanyEventTriggerId" = 8
+         order by  "Time" desc;
+
 select count(*) from "DriverReportLogs" where "ReportId" is null;
 
 --триггеры
@@ -51,10 +55,12 @@ sum (case when r."CompanyEventTriggerId" = 2 then 1 else 0 end) "Mileage without
 sum (case when r."CompanyEventTriggerId" = 3 then 1 else 0 end) "Seat sensors disabled",
 sum (case when r."CompanyEventTriggerId" = 4 then 1 else 0 end) "Online without orders",
 sum (case when r."CompanyEventTriggerId" = 5 then 1 else 0 end) "Block driver",
-sum (case when r."CompanyEventTriggerId" = 6 then 1 else 0 end) "Offline/online"
+sum (case when r."CompanyEventTriggerId" = 6 then 1 else 0 end) "Offline/online",
+sum (case when r."CompanyEventTriggerId" = 7 then 1 else 0 end) "AI Mileage without orders",
+sum (case when r."CompanyEventTriggerId" = 8 then 1 else 0 end) "Daily Mileage without orders"
 from "DriverReportLogs" r
 inner join "Users" u on r."DriverId" = u."Id"
-where "ReportId" is null and r."Time">='2025-10-17 00:00:00.000000 +04:00';
+where "ReportId" is null and r."Time">='2025-11-16 00:00:00.000000 +04:00';
 
 
 --из отправленных

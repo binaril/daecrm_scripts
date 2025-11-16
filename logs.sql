@@ -17,11 +17,6 @@ select * from "Logs"
          where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 1
          order by "Time" desc;
 
---careem
-select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 2
-         order by "Time" desc;
-
 --office
 select * from "Logs"
          where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 3
