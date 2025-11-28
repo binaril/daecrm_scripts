@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/1.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/CarUsage.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/bolt.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/cars.sql" dialect="PostgreSQL" />
@@ -18,6 +19,7 @@
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251101.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251104.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251109.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251116.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/current.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/reports.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/transactions.sql" dialect="PostgreSQL" />

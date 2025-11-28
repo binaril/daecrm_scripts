@@ -20,7 +20,3 @@ select * from "Users" where "ChatId" is not null
 
          select "BotId" from "Companies"
 
-         6899593548:AAGQbMOC2vnv81PTgayIMMXEX-0gHA8lp7I
-
-
-                        test 6723763141:AAG1m8YckWKyHKuCKnnRptwuqSCS12woBjY
