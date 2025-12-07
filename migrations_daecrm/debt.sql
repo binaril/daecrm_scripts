@@ -1,0 +1,2 @@
+--20251206
+--DROP TABLE "CashTransfers";

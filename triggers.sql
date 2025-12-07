@@ -4,9 +4,15 @@ select * from "CompanyEventTriggers";
 
 select * from "DriverReportLogs" order by  "Time" desc;
 
-select * from "DriverReportLogs"
+select "Time", "DriverId", "Message" from "DriverReportLogs"
          where "CompanyEventTriggerId" = 8
+         --and "DriverId"=22
          order by  "Time" desc;
+
+select "Time", "Message", "DurationMilliseconds" /1000 as "ExecutionTime"  from "Logs"
+         where "CompanyId"=2 and "EntityTypeCode" = 3
+         and "Topic" = 'SendToOpenAi'
+         order by "Time" desc;
 
 select count(*) from "DriverReportLogs" where "ReportId" is null;
 

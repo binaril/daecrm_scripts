@@ -7,8 +7,8 @@ select cc."Id" "CabmanCarId", cc."VehicleID", u."Id" "UserId", u."UserName" from
 
 
 
-select * from "CabmanCarStatuses" ccs where ccs."CabmanCarId" = 192
-and "Time" between '2025-10-05 22:00:00.000000 +05:00' and '2025-10-06 04:00:00.000000 +05:00'
+select * from "CabmanCarStatuses" ccs where ccs."CabmanCarId" = 232
+and "Time" between '2025-11-15 00:00:00.000000 +04:00' and '2025-11-17 00:00:00.000000 +04:00'
 order by "Time";
 
 select * from "Orders" o where "DriverId" = 19
@@ -30,7 +30,7 @@ from "CabmanCarStatuses";
 
 delete from "CabmanCarStatuses" where "Time"<'2025-08-01';
 
-select * from "CabmanCars" where "VehicleID" like 'L42696';
+select * from "CabmanCars" where "VehicleID" like 'L19217';
 
 select * from "Cars" where "Id" = 30;
 

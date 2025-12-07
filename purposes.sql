@@ -1,0 +1,1 @@
+select * from daecrm.public."Purposes" where "CompanyId"=2
