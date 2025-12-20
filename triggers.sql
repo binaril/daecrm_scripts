@@ -50,7 +50,7 @@ sum (case when r."CompanyEventTriggerId" = 5 then 1 else 0 end) "Block driver",
 sum (case when r."CompanyEventTriggerId" = 6 then 1 else 0 end) "Offline/online"
 from "DriverReportLogs" r
 inner join "Users" u on r."DriverId" = u."Id"
-where "ReportId" is null and r."Time">='2025-11-01 00:00:00.000000 +04:00'
+where "ReportId" is null and r."Time">='2025-12-01 00:00:00.000000 +04:00'
 group by u."UserName";
 
 
@@ -66,7 +66,7 @@ sum (case when r."CompanyEventTriggerId" = 7 then 1 else 0 end) "AI Mileage with
 sum (case when r."CompanyEventTriggerId" = 8 then 1 else 0 end) "Daily Mileage without orders"
 from "DriverReportLogs" r
 inner join "Users" u on r."DriverId" = u."Id"
-where "ReportId" is null and r."Time">='2025-11-16 00:00:00.000000 +04:00';
+where "ReportId" is null and r."Time">='2025-12-01 00:00:00.000000 +04:00';
 
 
 --из отправленных

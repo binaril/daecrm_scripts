@@ -49,9 +49,21 @@ select * from "Logs"
          order by "Time" desc;
 
 
+select * from "Logs"
+         where "CompanyId"=2 and "EntityTypeCode" = 3 and "Topic" like 'DetectTrips'
+         order by "Time" desc;
+
+
+select count(*) from "Users"
+
 --reports
 select * from "Reports";
 
 select * from "Logs"
          where "CompanyId"=2 and "EntityTypeCode" = 4 --and "EntityId" = 11
          order by "Time" desc;
+
+
+select * from "Transactions" where "IsHandled" = false
+
+select * from "Transactions" where "DateTime" > '2025-12-11 09:47:38.931678 +00:00'

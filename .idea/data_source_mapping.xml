@@ -2,19 +2,22 @@
 <project version="4">
   <component name="DataSourcePerFileMappings">
     <file url="file://$PROJECT_DIR$/1.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
+    <file url="file://$PROJECT_DIR$/cars.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
     <file url="file://$PROJECT_DIR$/database_size.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
     <file url="file://$PROJECT_DIR$/driverStates.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
     <file url="file://$PROJECT_DIR$/gps_points.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
     <file url="file://$PROJECT_DIR$/imort_transactions.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
-    <file url="file://$PROJECT_DIR$/logs.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
+    <file url="file://$PROJECT_DIR$/logs.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251027.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251109.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20251116.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251206.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251212.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/current.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
-    <file url="file://$PROJECT_DIR$/purposes.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
-    <file url="file://$PROJECT_DIR$/reports.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
+    <file url="file://$PROJECT_DIR$/purposes.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
+    <file url="file://$PROJECT_DIR$/reports.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
     <file url="file://$PROJECT_DIR$/transactions.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
-    <file url="file://$PROJECT_DIR$/triggers.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
-    <file url="file://$PROJECT_DIR$/users.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
+    <file url="file://$PROJECT_DIR$/triggers.sql" value="ca08fb27-cafb-4085-9b9c-987556b7c4fe" />
+    <file url="file://$PROJECT_DIR$/users.sql" value="8b5d0aab-f8e7-4270-a16d-6742e19c22e2" />
   </component>
 </project>

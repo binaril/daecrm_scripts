@@ -17,3 +17,22 @@ inner join "Users" u on c."Id" = u."CarId"
 where u."IsBlocked" = false and c."CompanyId"=2
 group by c."VehicleID"
 having count(*) > 1;
+
+
+select "CompanyId", count("Id") from "Cars" group by "CompanyId"
+
+select * from "Users"
+
+select *
+from "Companies";
+
+
+select * from "CarUsages" where "CarId" = 15 order by "Time" desc;
+
+select * from "CarUsages" where "UserId" = 897 order by "Time" desc;
+
+select * from "DriverSummaries"
+         where "UserId" = 897
+         order by "Date" desc
+
+select * from "Users" where "Id" = 897
