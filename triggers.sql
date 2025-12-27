@@ -108,3 +108,5 @@ select * from "OrderStatuses"
 select * from "Companies"
 
 select * from "Users" where "Role" != 0 order by "Id"
+
+select * from "UserSummaryStatuses" order by "Id" desc
