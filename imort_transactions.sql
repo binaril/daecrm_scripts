@@ -6,3 +6,6 @@ select * from "Transactions" where "AggregatorTransactionId" = '19245035'
 select * from "ImportTransactionOperations";
 
 update "ImportTransactionOperations"    set "Status" = 4 where  "Status" =2
+
+
+select * from "Companies"
