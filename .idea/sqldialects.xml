@@ -27,6 +27,7 @@
     <file url="file://$PROJECT_DIR$/migrations_daecrm/current.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/purposes.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/reports.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/script.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/transactions.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/triggers.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/uber.sql" dialect="PostgreSQL" />
