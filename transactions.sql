@@ -41,3 +41,22 @@ select * from "ZedDrivers" where "Name" like '%Elhassan%'
 select * from "DriverActivityStatuses"
 
 select * from "UserSessions"
+
+
+select * from "Transactions" where "DriverId" = 1121
+
+select * from "Transactions" where "CompanyId" = 9
+order by "DateTime" desc;
+
+select * from "AggrSummaries" s
+inner join "Users" u on u."Id" = s."UserId"
+where u."CompanyId" = 9
+
+select * from "AggrSummaries" where "UserId" = 1121
+
+select * from "DriverSummaries" s inner join "Users" u on u."Id" = s."UserId"
+where u."CompanyId" = 9
+
+select * from "CashBoxSummaries" s inner join "CashBoxes" c on c."Id" = s."CashBoxId" where c."CompanyId" = 9
+
+select * from

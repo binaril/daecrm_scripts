@@ -19,7 +19,7 @@ select * from "Logs"
 
 --office
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 3
+         where "CompanyId"=9 and "EntityTypeCode" = 0 and "EntityId" = 3
          order by "Time" desc;
 
 --bolt
@@ -45,7 +45,7 @@ select * from "Logs"
 
 --summary
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 3
+         where "CompanyId"=9 and "EntityTypeCode" = 3
          order by "Time" desc;
 
 
