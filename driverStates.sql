@@ -5,9 +5,26 @@ select * from "AggrDriverStatuses" where "IsHandled" = false
 select * from "UserSummaryStatuses" order by "StartTime" desc;
 
 
-
+select * from "Users" where "Phone" like '%971565858452%'
 
 select * from "DriverStatuses";
+
+select * from "CarModels"
+
+
+select * from "Purposes" where "CompanyId"=9 and "PurposeReportTypeId" !=0
+
+
+select * from "Purposes" where "Id" in (17,22,78,491)
+
+select * from "Purposes" where "Name" like 'Electric charge'
+
+select * from "PurposeReportType"
+
+select * from "ImportTransactionCompanyPurposes" where "CompanyId"=2
+
+select *
+from "Counterparties";
 
 /*
  1,Online
@@ -68,3 +85,7 @@ select *, (select "DriverStatusId" from "AggrDriverStatuses" a where a."Aggregat
                     (select max("DateTime") from "AggrDriverStatuses" a where a."AggregatorId" = 2 and "DriverId"=u."Id" ))
 from "Users" u where "CompanyId"=2 and u."Role"=0 and u."IsBlocked" = false;
 
+
+
+select * from "CarUsages"-- where "CarId" = 748
+                          order by "Id" desc

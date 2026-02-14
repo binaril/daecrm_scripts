@@ -18,3 +18,4 @@ select * from  "Users" where "LoginName" like '%lokt%'
 3
 
 
+select * from "Companies"

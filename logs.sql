@@ -24,7 +24,7 @@ select * from "Logs"
 
 --bolt
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 4
+         where "CompanyId"=9 and "EntityTypeCode" = 0 and "EntityId" = 4
          order by "Time" desc;
 
 --zed

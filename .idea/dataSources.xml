@@ -36,5 +36,12 @@
       <jdbc-url>jdbc:redis://5.129.219.212:246379/0</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="wiki@176.97.78.207" uuid="4770c410-0e11-421f-b051-9e96ac7ec722">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://176.97.78.207:8432/wiki</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>

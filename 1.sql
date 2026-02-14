@@ -1,5 +1,6 @@
 select * from public."Companies"
 
+
 select * from "CashBoxes"
 
 select * from "Purposes"
@@ -38,3 +39,4 @@ select * from "OfficeOrders" where "CompanyId"=9
 select * from "Users" where "CompanyId" = 2 and "UserName" like '%Matloob%'
 
 
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO wiki
