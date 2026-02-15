@@ -14,7 +14,7 @@ select * from "Logs"
 
 --uber
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 1
+         where "CompanyId"=9 and "EntityTypeCode" = 0 and "EntityId" = 1
          order by "Time" desc;
 
 --office

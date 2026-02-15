@@ -1,2 +1,17 @@
 --20251206
 --DROP TABLE "CashTransfers";
+
+
+
+
+GRANT SELECT, INSERT, DELETE, UPDATE ON "YoocaOrders" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "YoocaCars" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "YoocaUsers" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "YoocaLocations" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "YoocaRouteTypes" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "YoocaOrderStatuses" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "YoocaServiceTypes" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "YoocaTariffTypes" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "Currencies" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "LogDbItems" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "LogDbEntries" TO limousine;
