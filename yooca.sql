@@ -11,3 +11,6 @@ delete from "YoocaLocations";
 delete from "YoocaOrders";
 delete from "YoocaCars";
 delete from "YoocaUsers";
+
+
+select * from "Users" where "CompanyId" = 9

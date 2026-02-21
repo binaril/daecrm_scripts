@@ -12,18 +12,18 @@
     <file url="file://$PROJECT_DIR$/imort_transactions.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/logs.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251005.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251014.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251027.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251028.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251101.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251104.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251109.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251116.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251206.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251212.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251221.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20251230.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251005.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251014.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251027.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251028.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251101.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251104.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251109.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251116.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251206.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251212.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251221.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251230.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20260112.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20260120.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20260204.sql" dialect="PostgreSQL" />
@@ -36,6 +36,7 @@
     <file url="file://$PROJECT_DIR$/uber.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/users.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/yango.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/yooca.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/zed.sql" dialect="PostgreSQL" />
   </component>
 </project>
