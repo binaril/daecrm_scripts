@@ -14,4 +14,5 @@ GRANT SELECT, INSERT, DELETE, UPDATE ON "YoocaServiceTypes" TO limousine;
 GRANT SELECT, INSERT, DELETE, UPDATE ON "YoocaTariffTypes" TO limousine;
 GRANT SELECT, INSERT, DELETE, UPDATE ON "Currencies" TO limousine;
 GRANT SELECT, INSERT, DELETE, UPDATE ON "LogDbItems" TO limousine;
+GRANT SELECT, INSERT, DELETE, UPDATE ON "LogDbActions" TO limousine;
 GRANT SELECT, INSERT, DELETE, UPDATE ON "LogDbEntries" TO limousine;
