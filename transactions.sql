@@ -113,9 +113,24 @@ select * from "Users" where "Phone" like '%87654%'
 
 --delete from "Transactions" where "AggregatorId"=1 and "CompanyId"=2 and "DateTime">'2026-01-28'
 
-2026-01-28 18:04:22.870000 +00:00
-Fare,107.67
-Tax on Service Fee,-1.35
-Service fee,-26.92
-Toll,8
+select *
+from "Transactions" t
+inner join "TransactionTypes" tt on t."TransactionTypeId"=tt."Id"
+where "OrderId" is null and tt."IsAggrTransaction" and "AggregatorId" != 2
+order by "DateTime" desc
 
+
+-- where "OrderId" is not null and tt."IsAggrTransaction"; 2667019 63831 WIN
+-- where "OrderId" is null and tt."IsAggrTransaction" 63831;
+-- where "OrderId" is null and tt."IsAggrTransaction" and "AggregatorId" != 2 55204
+
+--where "OrderId" is null and not tt."IsAggrTransaction"; 69773
+--where "OrderId" is not null and not tt."IsAggrTransaction"; 681
+
+select count(*)
+from "Transactions";
+
+select count(*)
+from "Transactions" where "ParentId" is not null
+
+select max("Id") from "Transactions"

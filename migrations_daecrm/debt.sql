@@ -27,7 +27,7 @@ select distinct trim("AcquiringTerminalName") from "Cars" where "CompanyId"=2 an
 
 --создаем терминалы
 insert into "PosTerminals" ("Name", "CompanyId", "Deleted")
-(select distinct "AcquiringTerminalName", 2, false from "Cars" where "CompanyId"=2 and "AcquiringTerminalName" is not null and "AcquiringTerminalName" != '');
+(select distinct "AcquiringTerminalName", 9, false from "Cars" where "CompanyId"=9 and "AcquiringTerminalName" is not null and "AcquiringTerminalName" != '');
 
 --привязываем терминалы к водителям
 
@@ -36,7 +36,7 @@ set "PosTerminalId" = (select "Id" from "PosTerminals" p
                                    where p."CompanyId" = u."CompanyId"
                                      and p."Name" = (select trim("AcquiringTerminalName") from "Cars" c where c."Id" = u."CarId")
                                    limit 1)
-where "CompanyId" = 2 and "IsBlocked" = false and "Role" = 0;
+where "CompanyId" = 9 and "IsBlocked" = false and "Role" = 0;
 
 
 
