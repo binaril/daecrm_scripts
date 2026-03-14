@@ -97,7 +97,7 @@ select * from "AggrSummaries"
 
 select * from "Transactions" where Ag
 
-
+select * from "Companies"
 
 
 
@@ -134,3 +134,13 @@ select count(*)
 from "Transactions" where "ParentId" is not null
 
 select max("Id") from "Transactions"
+
+select o."CompanyId", o."Id", u."CompanyId"
+from "OfficeOrders" o
+inner join "Users" u on o."DriverId" = u."Id"
+order by o."Id" desc ;
+
+
+
+
+
