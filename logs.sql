@@ -9,22 +9,22 @@ select * from "Aggregators";
 
 --yandex
 select * from "Logs"
-         where "CompanyId"=9 and "EntityTypeCode" = 0 and "EntityId" = 0
+         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 0
          order by "Time" desc;
 
 --uber
 select * from "Logs"
-         where "CompanyId"=9 and "EntityTypeCode" = 0 and "EntityId" = 1 and "Topic" = 'SaveCommonTransactions'
+         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 1 and "Topic" = 'SaveCommonTransactions'
          order by "Time" desc;
 
 --office
 select * from "Logs"
-         where "CompanyId"=9 and "EntityTypeCode" = 0 and "EntityId" = 3
+         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 3
          order by "Time" desc;
 
 --bolt
 select * from "Logs"
-         where "CompanyId"=9 and "EntityTypeCode" = 0 and "EntityId" = 4
+         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 4
          order by "Time" desc;
 
 --zed
@@ -64,6 +64,9 @@ select * from "Logs"
          order by "Time" desc;
 
 
-select * from "Transactions" where "IsHandled" = false
+select * from "Transactions"
+         where "AggregatorId" is not null
+         and "DateTime" > '2026-03-14 15:27:34.401304 +00:00'
+         order by "Id" desc
 
 select * from "Transactions" where "DateTime" > '2025-12-11 09:47:38.931678 +00:00'

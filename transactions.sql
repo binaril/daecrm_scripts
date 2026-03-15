@@ -141,6 +141,7 @@ inner join "Users" u on o."DriverId" = u."Id"
 order by o."Id" desc ;
 
 
-
+select * from "Transactions" where "Id" between 1743948
+and 1744948
 
 
