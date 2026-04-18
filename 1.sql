@@ -69,3 +69,16 @@ Adil Liaqat похожая ситуация
 
 Итак после разбора можно
 
+select * from "CabmanSummaries" order by "Date" Desc
+
+select *
+from "CabmanCarStatuses" s
+inner join "CabmanCars" c on s."CabmanCarId"=c."Id"
+where c."CarId"=790 order by "Time" desc;
+
+select * from "CabmanCarStatuses" where "Speed">10  and "Time"> '2026-04-15' and "CabmanCarId" = 209
+
+select "CarId"
+from "CabmanCars" where "Id" = 209;
+
+select * from "Users" where "CarId" = 610

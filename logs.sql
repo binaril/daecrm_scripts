@@ -45,14 +45,23 @@ select * from "Logs"
 
 --summary
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 3
+         where "CompanyId"=2 --and "EntityTypeCode" = 3
          order by "Time" desc;
 
 
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 3 and "Topic" like 'DetectTrips'
+         where "CompanyId"=2 and "EntityTypeCode" = 3 --and "Success" is false
          order by "Time" desc;
 
+
+select * from "Logs"
+         where "Success" is false
+         order by "Time" desc;
+
+
+truncate "Logs"
+
+delete from "Logs" where "Time" < '2026-04-01'
 
 select count(*) from "Users"
 
@@ -70,3 +79,19 @@ select * from "Transactions"
          order by "Id" desc
 
 select * from "Transactions" where "DateTime" > '2025-12-11 09:47:38.931678 +00:00'
+
+
+select min("Time")
+from "Logs";
+
+
+
+CREATE ROLE backup_role LOGIN PASSWORD 'strong_password';
+GRANT CONNECT ON DATABASE daecrm TO backup_role;
+GRANT CONNECT ON DATABASE wiki TO backup_role;
+GRANT CONNECT ON DATABASE taximeter TO backup_role;
+GRANT USAGE ON SCHEMA public TO backup_role;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO backup_role;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public
+  GRANT SELECT ON TABLES TO backup_role;
+

@@ -10,3 +10,5 @@ select *
 from "Transactions" where "CompanyId" = 9
 and "TransactionTypeId" = 21
 
+select *
+from "Companies";

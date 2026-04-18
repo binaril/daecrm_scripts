@@ -3,6 +3,7 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/1.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/CarUsage.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Finance/cashboxes.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/audit.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/bolt.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/cars.sql" dialect="PostgreSQL" />
@@ -14,6 +15,7 @@
     <file url="file://$PROJECT_DIR$/imort_transactions.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/log_db.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/logs.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/mafia/1.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251005.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/2025/20251014.sql" dialect="PostgreSQL" />
@@ -32,7 +34,8 @@
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20260204.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20260222.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/20260306.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/migrations_daecrm/20260315.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/20260416.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/migrations_daecrm/Completed/backup_user.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/current.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/migrations_daecrm/debt.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/orders.sql" dialect="PostgreSQL" />
