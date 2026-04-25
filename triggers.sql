@@ -110,3 +110,33 @@ select * from "Companies"
 select * from "Users" where "Role" != 0 order by "Id"
 
 select * from "UserSummaryStatuses" order by "Id" desc
+
+select *
+from "TriggerRules"
+
+
+select *
+from "AggrSummaries" where "UserId" = 896 order by "Id" DESC ;
+
+select * from "UserSummaryStatuses" where "UserId" = 896  order by "Id" DESC ;
+
+
+select * from "CompanyEventTriggers" ce
+inner join "EventTriggers" e on e."Id" =ce."EventTriggerId"
+
+select *
+from "CabmanCarStatuses" order by "Id" desc ;
+
+
+select * from "CabmanCarStatuses" s
+inner join "CabmanCars" c on c."CurrentCabmanStatusId" = s."Id"
+where "CompanyId" =2
+order by "Time" desc
+
+
+
+Order cancelled by driver
+Block driver
+Mileage without orders {"MileageThresholder":20}
+Online without orders {"OnlineDurationInSeconds":3600}
+

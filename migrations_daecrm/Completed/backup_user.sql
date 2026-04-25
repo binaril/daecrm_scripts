@@ -17,3 +17,7 @@ vacuum FULL "Logs"
 
 
 GRANT SELECT, INSERT, DELETE, UPDATE ON ALL TABLES IN SCHEMA public TO limousine;
+
+
+select * from "Users" where "CompanyId"=2 and ("LastName" like '%Ibrahim%' or "FirstName" like '%Ibrahim%')
+
