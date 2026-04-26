@@ -112,7 +112,7 @@ select * from "Users" where "Role" != 0 order by "Id"
 select * from "UserSummaryStatuses" order by "Id" desc
 
 select *
-from "TriggerRules"
+from "TriggerRules" where "CompanyId" =2
 
 
 select *
@@ -134,9 +134,32 @@ where "CompanyId" =2
 order by "Time" desc
 
 
-
+/*
 Order cancelled by driver
 Block driver
 Mileage without orders {"MileageThresholder":20}
-Online without orders {"OnlineDurationInSeconds":3600}
 
+
+
+Online without orders {"OnlineDurationInSeconds":3600}
+{
+  "operator": "AND",
+  "rules": [
+    { "fact": "driver.aggregators.onlineCount", "op": "gte", "value": 1 },
+    { "fact": "driver.activeOrders.count",      "op": "eq",  "value": 0 },
+    { "fact": "condition.sustainedFor",         "op": "gte", "value": 1200 }
+  ]
+}
+*/
+
+select "CarId"
+from "Users" where "Id" = 1075;
+
+15
+
+select *
+from "CabmanCars" where "CarId" = 15;
+
+select *
+from "CabmanCarStatuses"-- where "CabmanCarId" = 187
+                         order by "Id" desc;
