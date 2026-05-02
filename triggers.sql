@@ -115,6 +115,25 @@ select *
 from "TriggerRules"
 
 
+{
+  "operator": "AND",
+  "rules": [
+    { "fact": "driver.aggregators.onlineCount", "op": "gte", "value": 1 },
+    { "fact": "driver.aggregators.onTripCount",      "op": "eq",  "value": 0 }
+  ]
+}
+
+{"operator":"AND","rules":[{"fact":"car.ignition","op":"eq","value":true},{"fact":"driver.aggregators.onlineCount","op":"lte","value":1}, { "fact": "driver.aggregators.onTripCount",      "op": "eq",  "value": 0 }]}
+{"operator":"AND","rules":[{"fact":"car.ignition","op":"eq","value":true},{"fact":"driver.aggregators.onlineCount","op":"lt","value":2}, { "fact": "driver.aggregators.onTripCount",      "op": "eq",  "value": 0 }]}
+
+{"operator":"AND","rules":[{"fact":"car.ignition","op":"eq","value":true},{"fact":"driver.aggregators.onlineCount","op":"lte","value":1}]}
+
+
+
+{"operator":"AND","rules":[{"fact":"car.ignition","op":"eq","value":true},{"fact":"driver.aggregators.onlineCount","op":"lte","value":1}]}
+
+{"operator":"AND","rules":[{"fact":"driver.aggregators.onTripCount","op":"eq","value":0},{"fact":"car.seatSensor","op":"eq","value":true},{ "fact": "condition.sustainedFor",         "op": "gte", "value": 300 }]}
+
 select *
 from "AggrSummaries" where "UserId" = 896 order by "Id" DESC ;
 
@@ -135,8 +154,46 @@ order by "Time" desc
 
 
 
-Order cancelled by driver
-Block driver
-Mileage without orders {"MileageThresholder":20}
-Online without orders {"OnlineDurationInSeconds":3600}
+select *
+from "DriverSummaries" s
+left join "Users" u on s."UserId" = u."Id"
+where "CompanyId" =2
+order by s."Id" desc;
 
+
+
+select *
+from "DriverSummaries" s
+left join "Users" u on s."UserId" = u."Id"
+where u."Id" =915
+order by s."Id" desc;
+
+update "DriverSummaries"
+set "DriverIncomeCalculated" = false
+where "Date" > '2026-03-31'
+and "UserId" in (select "Users"."Id" from "Users" where "CompanyId" =2)
+
+select count(*)
+from "DriverSummaries" where "DriverIncomeCalculated" = false;
+
+
+
+select count(*) from "Transactions" where "IsHandled" = false
+
+select count(*)
+from "AggrDriverStatuses"
+where "CompanyId"=2 and "IsHandled" = false;
+
+select *
+from "Logs";
+
+select * from "CarUsages" order by "Id" desc
+
+select *
+from "UberDrivers" where "CompanyId" =2 and "FirstName" like '%Noor%';
+
+select *
+from "UberDriverStatuses" where "UberDriverId" = 37 order by "Id" desc;
+
+
+{"operator":"AND","rules":[{"fact":"car.ignition","op":"eq","value":true},{"fact":"driver.aggregators.onlineCount","op":"lt","value":2},{"fact":"condition.sustainedFor","op":"gte","value":1200}]}
