@@ -15,7 +15,7 @@ select * from "Users" where "Role"=0 and "CompanyId"=2 --and "IsBlocked" = false
 select * from "Users" where "ChatId" is not null
          order by "Id"
 
-         where "Role"!=0 and "CompanyId"=2
+        select * from "Users" where "Role"!=0 and "CompanyId"=2
 
 
          select "BotId" from "Companies"

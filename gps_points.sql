@@ -7,8 +7,8 @@ select cc."Id" "CabmanCarId", cc."VehicleID", u."Id" "UserId", u."UserName" from
 
 
 
-select * from "CabmanCarStatuses" ccs where ccs."CabmanCarId" = 232
-and "Time" between '2025-11-15 00:00:00.000000 +04:00' and '2025-11-17 00:00:00.000000 +04:00'
+select * from "CabmanCarStatuses" ccs where ccs."CabmanCarId" = 183
+and "Time" between '2026-05-05 00:00:00.000000 +04:00' and '2026-05-06 00:00:00.000000 +04:00'
 order by "Time";
 
 select * from "Orders" o where "DriverId" = 19
@@ -30,16 +30,20 @@ from "CabmanCarStatuses";
 
 delete from "CabmanCarStatuses" where "Time"<'2025-08-01';
 
-select * from "CabmanCars" where "VehicleID" like 'L19217';
-
-select * from "Cars" where "Id" = 30;
-
-update "CabmanCars" set
-"CurrentCabmanStatusId" = null
+select * from "CabmanCars" where "VehicleID" like 'L10665';
 
 
-select * from "Users" where "CarId" = 30
+select "Time", "Status", "SeatSensorStatus", "SeatSensorValue", "Lat", "Lng", "Odometr", "State"
+from "CabmanCarStatuses" where "CabmanCarId" = 236
+and "Time" between '2026-05-05 00:00:00.000000 +04:00' and '2026-05-06 00:00:00.000000 +04:00'
+order by "Time" desc;
+
+select * from "Cars" where "Id" = 22
+select * from "Users" where "CarId" = 22
 
 
+select * from "CabmanCars" where "CarId" =814
 
-                                                                                                                                                                                                 185
+
+select *
+from "AggrDriverStatuses" where "DriverId" = 18 and "AggregatorId" = 0 order by  "Id" desc;

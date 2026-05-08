@@ -14,8 +14,22 @@ select * from "Logs"
 
 --uber
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 1 and "Topic" = 'SaveCommonTransactions'
+         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 1 --and "Topic" = 'SaveCommonTransactions'
+         --and "Success" = false
          order by "Time" desc;
+
+select count(*), max("Time") from "Logs" where "CompanyId" = 2 and "EntityTypeCode" = 0 and "EntityId" = 1 and "Success" = true
+                                           and "Time">'2026-01-01'
+and "DurationMilliseconds" > 30000
+
+select * from "Logs" where "CompanyId" = 2 and "EntityTypeCode" = 0 and "EntityId" = 1 and "Success" = true
+and "DurationMilliseconds" > 30000
+ order by "Time" desc;
+
+select "Id", "DriverTypeId" from "Users" where "CompanyId" = 10
+
+select *
+from "Companies" where "Id" = 10;
 
 --office
 select * from "Logs"

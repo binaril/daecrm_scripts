@@ -115,19 +115,7 @@ select *
 from "TriggerRules"
 
 
-{
-  "operator": "AND",
-  "rules": [
-    { "fact": "driver.aggregators.onlineCount", "op": "gte", "value": 1 },
-    { "fact": "driver.aggregators.onTripCount",      "op": "eq",  "value": 0 }
-  ]
-}
-
-{"operator":"AND","rules":[{"fact":"car.ignition","op":"eq","value":true},{"fact":"driver.aggregators.onlineCount","op":"lte","value":1}, { "fact": "driver.aggregators.onTripCount",      "op": "eq",  "value": 0 }]}
-{"operator":"AND","rules":[{"fact":"car.ignition","op":"eq","value":true},{"fact":"driver.aggregators.onlineCount","op":"lt","value":2}, { "fact": "driver.aggregators.onTripCount",      "op": "eq",  "value": 0 }]}
-
-{"operator":"AND","rules":[{"fact":"car.ignition","op":"eq","value":true},{"fact":"driver.aggregators.onlineCount","op":"lte","value":1}]}
-
+{"operator":"AND","rules":[{"fact":"driver.aggregators.onTripCount","op":"eq","value":0},{"fact":"car.seatSensor","op":"eq","value":true},{"fact":"car.ignition","op":"eq","value":true}]}
 
 
 {"operator":"AND","rules":[{"fact":"car.ignition","op":"eq","value":true},{"fact":"driver.aggregators.onlineCount","op":"lte","value":1}]}
@@ -159,6 +147,11 @@ from "DriverSummaries" s
 left join "Users" u on s."UserId" = u."Id"
 where "CompanyId" =2
 order by s."Id" desc;
+
+
+update "DriverSummaries" set "DriverIncomeCalculated" = false
+where "UserId" in (select "Id" from "Users" where "CompanyId" =2 and "IsBlocked" = false)
+and "Date"> '2026-03-30'
 
 
 

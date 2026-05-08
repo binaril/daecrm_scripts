@@ -1,2 +1,9 @@
 select * from "__EFMigrationsHistory" order by "MigrationId" desc
 
+
+
+20260414193759_MigrateTasksToIAuditedEntity
+20260412195749_add_aibot_tables
+20260412183228_add_TaskAccesses
+20260405171317_add_cashbox_withdraw_and_index
+20260328093744_AddMissingTaskPermissions
