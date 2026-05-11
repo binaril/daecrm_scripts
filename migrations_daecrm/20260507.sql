@@ -24,3 +24,11 @@ VALUES ('20260506182503_change_company_grants', '10.0.1');
 
 COMMIT;
 
+START TRANSACTION;
+ALTER TABLE "TriggerRules" ADD "IsIllegalTripTrigger" boolean NOT NULL DEFAULT FALSE;
+
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20260509193133_add_triggerrule_illegal_trip_flag', '10.0.1');
+
+COMMIT;
+

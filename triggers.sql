@@ -134,6 +134,11 @@ inner join "EventTriggers" e on e."Id" =ce."EventTriggerId"
 select *
 from "CabmanCarStatuses" order by "Id" desc ;
 
+select * from "TriggerRules" a
+
+select * from "CabmanTrips"
+         where "Finished" =false
+         order by "Id" desc
 
 select * from "CabmanCarStatuses" s
 inner join "CabmanCars" c on c."CurrentCabmanStatusId" = s."Id"

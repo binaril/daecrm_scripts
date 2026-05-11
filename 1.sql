@@ -1,5 +1,11 @@
 select * from public."Companies"
 
+select * from "CabmanCars" where "Id" = 172
+
+select *
+from "CabmanCarStatuses" where "CabmanCarId" = 172
+                         and "Time" < '2026-05-02 20:00'
+order by "Id" desc;
 
 select * from "CashBoxes"
 
@@ -11,6 +17,8 @@ select * from "Transactions" where --"TransactionTypeId" = 21 and
                                    "CompanyId"=2
                              order by "DateTime" desc
 
+select *
+from "CabmanTrips" order by "Id" desc;
 
 select * from "CashBoxes";
 
@@ -82,3 +90,7 @@ select "CarId"
 from "CabmanCars" where "Id" = 209;
 
 select * from "Users" where "CarId" = 610
+
+
+select *
+from "UserMessages";
