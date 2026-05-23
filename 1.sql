@@ -90,7 +90,3 @@ select "CarId"
 from "CabmanCars" where "Id" = 209;
 
 select * from "Users" where "CarId" = 610
-
-
-select *
-from "UserMessages";

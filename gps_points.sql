@@ -34,8 +34,8 @@ select * from "CabmanCars" where "VehicleID" like 'L10665';
 
 
 select "Time", "Status", "SeatSensorStatus", "SeatSensorValue", "Lat", "Lng", "Odometr", "State"
-from "CabmanCarStatuses" where "CabmanCarId" = 184
-and "Time" between '2026-05-08 00:00:00.000000 +04:00' and '2026-05-09 00:00:00.000000 +04:00'
+from "CabmanCarStatuses" where "CabmanCarId" = 236
+and "Time" between '2026-05-05 00:00:00.000000 +04:00' and '2026-05-06 00:00:00.000000 +04:00'
 order by "Time" desc;
 
 select * from "Cars" where "Id" = 22
@@ -47,9 +47,3 @@ select * from "CabmanCars" where "CarId" =14
 
 select *
 from "AggrDriverStatuses" where "DriverId" = 18 and "AggregatorId" = 0 order by  "Id" desc;
-
-
-select * from "CabmanCarStatuses" order by "Id" desc
-
-select *
-from "CabmanTrips" order by "Id" desc;

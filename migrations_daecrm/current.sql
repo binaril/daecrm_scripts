@@ -1,9 +1,15 @@
 select * from "__EFMigrationsHistory" order by "MigrationId" desc
 
 
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO limousine;
 
-20260414193759_MigrateTasksToIAuditedEntity
-20260412195749_add_aibot_tables
-20260412183228_add_TaskAccesses
-20260405171317_add_cashbox_withdraw_and_index
-20260328093744_AddMissingTaskPermissions
+select * from "AuthAccesses"
+
+select *
+from "Users" where "Id" = 923;
+
+select *
+from "DriverSummaries" where "UserId" = 923 order by "Date" desc;
+
+select *
+from "MotivationRules" where "Id" = 42;

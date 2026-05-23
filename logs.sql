@@ -49,7 +49,7 @@ select * from "Logs"
 
 --GPS tracker
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 1
+         where "CompanyId"=9 and "EntityTypeCode" = 1
          order by "Time" desc;
 
 --Bot (reserved)
@@ -62,6 +62,10 @@ select * from "Logs"
          where "CompanyId"=2 and "EntityTypeCode" = 3
          order by "Time" desc;
 
+select count(*) from "Transactions" where "IsHandled" = false and "CompanyId" =2
+
+select *
+from "Companies";
 
 select * from "Logs"
          where "CompanyId"=2 and "EntityTypeCode" = 3 --and "Success" is false
@@ -97,6 +101,11 @@ select * from "Transactions" where "DateTime" > '2025-12-11 09:47:38.931678 +00:
 
 select min("Time")
 from "Logs";
+
+select * from "Companies" where "Id" = 2
+
+select *
+from "CompanyExternalServiceConfigs";
 
 
 
