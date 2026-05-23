@@ -82,3 +82,15 @@ select "CarId"
 from "CabmanCars" where "Id" = 209;
 
 select * from "Users" where "CarId" = 610
+
+
+select *
+from "DriverSummaries" order by "Date" desc;
+
+select *
+from "AggrSummaries" order by "Date" desc;
+
+select *
+from "CashBoxSummaries" order by "Date" desc ;
+
+select * from "CabmanCompanies"

@@ -35,7 +35,7 @@ select * from "CabmanCars" where "VehicleID" like 'L10665';
 
 select "Time", "Status", "SeatSensorStatus", "SeatSensorValue", "Lat", "Lng", "Odometr", "State"
 from "CabmanCarStatuses" where "CabmanCarId" = 236
-and "Time" between '2026-05-05 00:00:00.000000 +04:00' and '2026-05-06 00:00:00.000000 +04:00'
+and "Time" between '2026-05-16 17:13:05.163000 +05:00' and '2026-05-16 19:11:40.257000 +05:00'
 order by "Time" desc;
 
 select * from "Cars" where "Id" = 22
@@ -47,3 +47,44 @@ select * from "CabmanCars" where "CarId" =814
 
 select *
 from "AggrDriverStatuses" where "DriverId" = 18 and "AggregatorId" = 0 order by  "Id" desc;
+
+
+select * from "UploadedFiles"
+
+select * from "CabmanCarStatuses" s
+inner join "CabmanCars" c on c."Id" = s."CabmanCarId"
+where c."CompanyId" = 9 --and "SeatSensorStatus" != 0
+order by s."Id" desc
+
+select *
+from "CabmanCarStatuses" where "CabmanCarId" = 241
+                         and "Time" between '2026-05-20 05:57:00.000000 +00:00' and '2026-05-20 06:50:00.000000 +00:00'
+order by "Id";
+
+
+select *
+from "CabmanCars" where "VehicleID" = 'L93211';
+
+select "Id", "Name", "TrackerId", *
+from "Companies" where "Id" = 9;
+
+select * from "CabmanCompanies"
+
+
+select *
+from "TriggerRules" where "CompanyId" = 2;
+
+
+select * from "UserLogins" where "Id" = 118
+
+select *
+from "Users" where "Id" = 1013;
+
+select *
+from;
+
+
+select * from "CabmanTrips" t
+inner join "CabmanCars" c on c."Id" = t."CabmanCarId"
+where c."CompanyId" = 9
+order by t."Id" desc
