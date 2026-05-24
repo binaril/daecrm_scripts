@@ -30,3 +30,6 @@ select "Id", "AcquiringTerminalName" from "Cars" where "CompanyId" =2
 select "Id", "Te" from "Users" where "CompanyId" =2
 
 select * from "CashBoxes"
+
+select *
+from ;
