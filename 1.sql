@@ -105,6 +105,9 @@ from "Companies" where "Id" = 2;
 
 select  * from "CompanyExternalServiceConfigs"
 
+select *
+from ;
+
 
 3,2,chargego,true,"{""pass"": ""secret"", ""user"": ""company@gmail.com"", ""allowedAccountIds"": [""1419a46e-d179-47f0-acb4-37c11cd0bf17""]}"
 1,2,enoc,true,"{""pass"": ""DAELimo@2023!!"", ""user"": ""dae.limousine.llc@gmail.com"", ""otpMail"": {""user"": ""dae.limousine.llc@gmail.com"", ""password"": ""jthr vjim pwyj xqhj""}, ""daysBack"": 2}"

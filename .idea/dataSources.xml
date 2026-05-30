@@ -58,5 +58,13 @@
       <jdbc-url>jdbc:postgresql://46.19.67.247:25432/mafia</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="daecrm1@176.97.78.207 [2]" uuid="82b00484-3e34-4996-81a4-c04b1b5e26d3">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://176.97.78.207:8432/daecrm1</jdbc-url>
+      <vm-options>-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=10808</vm-options>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
