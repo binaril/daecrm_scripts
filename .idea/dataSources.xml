@@ -66,5 +66,12 @@
       <vm-options>-DsocksProxyHost=127.0.0.1 -DsocksProxyPort=10808</vm-options>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="daecrm1-test@5.129.219.212 [2]" uuid="0fadbd81-22b8-4426-989b-9695556c52fd">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://5.129.219.212:8432/daecrm1</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
