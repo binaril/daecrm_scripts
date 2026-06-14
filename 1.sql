@@ -103,12 +103,15 @@ from "Transactions" where
 select *
 from "Companies" where "Id" = 2;
 
-select  * from "CompanyExternalServiceConfigs"
+select  * from "CompanyExternalServiceConfigs";
 
+    update "Users" set "IsBlocked" = true where "Id" =1176
+
+;
 select *
-from ;
-
-
+from "SalaryDocuments";
+        
+        
 3,2,chargego,true,"{""pass"": ""secret"", ""user"": ""company@gmail.com"", ""allowedAccountIds"": [""1419a46e-d179-47f0-acb4-37c11cd0bf17""]}"
 1,2,enoc,true,"{""pass"": ""DAELimo@2023!!"", ""user"": ""dae.limousine.llc@gmail.com"", ""otpMail"": {""user"": ""dae.limousine.llc@gmail.com"", ""password"": ""jthr vjim pwyj xqhj""}, ""daysBack"": 2}"
 2,2,legend,true,"{""pass"": ""xB1(X5@t"", ""user"": ""dae.limousine.llc@gmail.com"", ""allowedAccountIds"": [""0b88e63e-80c7-4bf6-afaa-abe9a7ecae7d""]}"
