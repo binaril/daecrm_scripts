@@ -145,3 +145,5 @@ select * from "Transactions" where "Id" between 1743948
 and 1744948
 
 
+select *
+from "Users" where "IsOfficeEmployee" or "IsPaymentLinkEmployee";

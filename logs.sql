@@ -9,7 +9,7 @@ select * from "Aggregators";
 
 --yandex
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 0 and "Topic" = 'SaveDriverStatus'
+         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 0 --and "Topic" = 'SaveDriverStatus'
          order by "Time" desc;
 
 --uber
@@ -49,7 +49,7 @@ select * from "Logs"
 
 --GPS tracker
 select * from "Logs"
-         where "CompanyId"=9 and "EntityTypeCode" = 1
+         where "CompanyId"=2 and "EntityTypeCode" = 1
          order by "Time" desc;
 
 --Bot (reserved)

@@ -103,25 +103,21 @@ from "Transactions" where
 select *
 from "Companies" where "Id" = 2;
 
-select  * from "CompanyExternalServiceConfigs";
+select  * from "CompanyExternalServiceConfigs"
 
-    update "Users" set "IsBlocked" = true where "Id" =1176
+  SELECT
+      u."UserName"                                AS driver,
+      c."VehicleID"                               AS car,
+      dcl."Time"                                  AS changed_at,
+      LAG(c."VehicleID") OVER (
+          PARTITION BY dcl."UserId"
+          ORDER BY dcl."Time"
+      )                                           AS prev_car
+  FROM "DriverCarLogs" dcl
+  JOIN "Users"  u ON u."Id" = dcl."UserId"
+  LEFT JOIN "Cars" c ON c."Id" = dcl."CarId"
+ -- WHERE dcl."AggregatorType" = 1   -- 1 = UBER
+  ORDER BY dcl."Time" DESC;
 
-;
-select *
-from "SalaryDocuments";
-        
-        
-3,2,chargego,true,"{""pass"": ""secret"", ""user"": ""company@gmail.com"", ""allowedAccountIds"": [""1419a46e-d179-47f0-acb4-37c11cd0bf17""]}"
-1,2,enoc,true,"{""pass"": ""DAELimo@2023!!"", ""user"": ""dae.limousine.llc@gmail.com"", ""otpMail"": {""user"": ""dae.limousine.llc@gmail.com"", ""password"": ""jthr vjim pwyj xqhj""}, ""daysBack"": 2}"
-2,2,legend,true,"{""pass"": ""xB1(X5@t"", ""user"": ""dae.limousine.llc@gmail.com"", ""allowedAccountIds"": [""0b88e63e-80c7-4bf6-afaa-abe9a7ecae7d""]}"
-4,2,rta,true,"{""pass"": ""Dae@1234"", ""user"": ""daellct"", ""otpMail"": {""user"": ""daelimousine@gmail.com"", ""password"": ""zcnt uqum mzuu mqfx""}, ""finesLimit"": 10}"
-5,2,salik,true,"{""salikAccountNumber"": ""35860904"", ""salikReportFilePrefix"": ""Salik""}"
 
 
-
-          {"pass": "secret", "user": "company@gmail.com", "allowedAccountIds": ["1419a46e-d179-47f0-acb4-37c11cd0bf17"]}
-          {"pass": "DAELimo@2023!!", "user": "dae.limousine.llc@gmail.com", "otpMail": {"user": "dae.limousine.llc@gmail.com", "password": "jthr vjim pwyj xqhj"}, "daysBack": 2}
-{"pass": "xB1(X5@t", "user": "dae.limousine.llc@gmail.com", "allowedAccountIds": ["0b88e63e-80c7-4bf6-afaa-abe9a7ecae7d"]}
-{"pass": "Dae@1234", "user": "daellct", "otpMail": {"user": "daelimousine@gmail.com", "password": "zcnt uqum mzuu mqfx"}, "finesLimit": 10}
-{"salikAccountNumber": "35860904", "salikReportFilePrefix": "Salik"}
