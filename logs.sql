@@ -14,7 +14,7 @@ select * from "Logs"
 
 --uber
 select * from "Logs"
-         where "CompanyId"=2 and "EntityTypeCode" = 0 and "EntityId" = 1 --and "Topic" = 'SaveCommonTransactions'
+         where "CompanyId"=9 and "EntityTypeCode" = 0 and "EntityId" = 1 --and "Topic" = 'SaveCommonTransactions'
          --and "Success" = false
          order by "Time" desc;
 
@@ -102,7 +102,7 @@ select * from "Transactions" where "DateTime" > '2025-12-11 09:47:38.931678 +00:
 select min("Time")
 from "Logs";
 
-select * from "Companies" where "Id" = 2
+select * from "Companies" where "Id" = 9
 
 select *
 from "CompanyExternalServiceConfigs";
