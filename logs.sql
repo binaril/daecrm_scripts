@@ -64,6 +64,8 @@ select * from "Logs"
 
 select count(*) from "Transactions" where "IsHandled" = false and "CompanyId" =2
 
+select count(*) from "Transactions" where "DateTime" between '2026-05-01' and '2026-06-01'
+
 select *
 from "Companies";
 
