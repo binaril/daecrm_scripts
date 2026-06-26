@@ -121,3 +121,7 @@ select  * from "CompanyExternalServiceConfigs"
 
 
 
+select distinct "Model" from "BoltCars"
+
+select *
+from "YandexCars";
