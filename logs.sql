@@ -69,6 +69,8 @@ select count(*) from "Transactions" where "DateTime" between '2026-05-01' and '2
 select *
 from "Companies";
 
+select * from "CabmanCompanies"
+
 select * from "Logs"
          where "CompanyId"=2 and "EntityTypeCode" = 3 --and "Success" is false
          order by "Time" desc;
