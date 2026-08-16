@@ -13,3 +13,10 @@ where "Id" > 5600;
 
 
 5652, 3060,1,527
+
+
+  SELECT "Id", "FirstName", "LastName", "NikName", "UserName",
+         "TelegramId", "Role", "CityId", "IsBlocked"
+  FROM "UserProfiles"
+  WHERE "Role" IN (2, 3)
+  ORDER BY "Role" DESC, "CityId";

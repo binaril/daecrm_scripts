@@ -106,7 +106,7 @@ select * from "Transactions" where "DateTime" > '2025-12-11 09:47:38.931678 +00:
 select min("Time")
 from "Logs";
 
-select * from "Companies" where "Id" = 9
+select * from "Companies" where "Id" = 2
 
 select *
 from "CompanyExternalServiceConfigs";
@@ -122,3 +122,6 @@ GRANT SELECT ON ALL TABLES IN SCHEMA public TO backup_role;
 ALTER DEFAULT PRIVILEGES IN SCHEMA public
   GRANT SELECT ON TABLES TO backup_role;
 
+
+select *
+from "Users" where "FirstName" = 'service_user';
