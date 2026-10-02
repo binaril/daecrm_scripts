@@ -125,3 +125,7 @@ select distinct "Model" from "BoltCars"
 
 select *
 from "YandexCars";
+
+
+select * from "Companies"
+
